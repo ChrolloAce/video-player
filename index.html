@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Player</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 3 19 12 5 21 5 3" />
+        </svg>
+        <span>VideoPlayer</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#player">Watch</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Seamless Streaming Experience</p>
+      <h1 class="hero-title">Watch. Enjoy.<br /><span class="highlight">Repeat.</span></h1>
+      <p class="hero-description">
+        A beautifully crafted video player with a modern interface.
+        Sit back, relax, and enjoy the show.
+      </p>
+      <a href="#player" class="hero-cta">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <polygon points="5 3 19 12 5 21 5 3" />
+        </svg>
+        Start Watching
+      </a>
+    </div>
+    <div class="hero-glow"></div>
+  </header>
+
+  <!-- Video Player Section -->
+  <section id="player" class="player-section">
+    <div class="section-container">
+      <h2 class="section-title">Now Playing</h2>
+      <div class="video-wrapper">
+        <video
+          id="mainVideo"
+          class="video-element"
+          controls
+          preload="metadata"
+          poster=""
+        >
+          <source src="video/sample.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" id="videoOverlay">
+          <button class="play-button" id="bigPlayBtn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="section-container">
+      <h2 class="section-title">Why You'll Love It</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </div>
+          <h3>Lightning Fast</h3>
+          <p>Instant loading with zero buffering. Optimized for the best playback performance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Looks stunning on any device — desktop, tablet, or mobile. Fully adaptive layout.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+          </div>
+          <h3>Full Control</h3>
+          <p>Play, pause, seek, and adjust volume with intuitive native browser controls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <h2 class="section-title">About</h2>
+      <p class="about-text">
+        This is a minimal, elegant video player landing page. Drop your
+        <code>.mp4</code> file into the <code>video/</code> folder,
+        name it <code>sample.mp4</code>, and you're ready to go.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container">
+      <p>&copy; 2026 VideoPlayer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/player.js"></script>
+</body>
+</html>
