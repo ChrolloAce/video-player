@@ -9,24 +9,14 @@
 <body>
   <div class="player-container">
     <div class="video-wrapper">
-      <video
-        id="mainVideo"
-        class="video-element"
-        controls
-        preload="metadata"
-      >
-        <source src="video/sample.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-overlay" id="videoOverlay">
-        <button class="play-button" id="bigPlayBtn" aria-label="Play video">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <polygon points="5 3 19 12 5 21 5 3" />
-          </svg>
-        </button>
-      </div>
+      <iframe
+        src="https://www.youtube.com/embed/TgwbXXfYIvM?rel=0"
+        title="Video Player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
-  <script src="js/player.js"></script>
 </body>
 </html>
